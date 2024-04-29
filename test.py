@@ -127,7 +127,6 @@ class BranchingProcess:
     def sample_expectation_psi(self):
         res = 0
         for _ in range(self.n):
-            self.reset()
             res += self.sample_psi()
         return res / self.n
     
